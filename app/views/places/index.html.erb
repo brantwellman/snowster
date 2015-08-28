@@ -1,1 +1,12 @@
 <h1>Welcome to the my site to review Ski resorts!</h1>
+
+<% @places.each do |place| %>
+	<div>
+		<h1><%= place.name %></h1>
+		<h2><%= place.state %>, <%= place.country %></h2>
+		<i><%= place.address %></i>
+		<p><%= place.description %></p>
+	</div>
+
+	<hr />
+<% end %>
