@@ -8,9 +8,11 @@
 	margin-top: 10px;
 	margin-bottom: 15px;
 	padding: 20px;
-	border-radius: 15px;
+	border-radius: 10px;
 	border-left-width: 10px;
-	border-left-color: #D63409;
+	border-left-color: #6BA7E3;
+	border-right-width: 5px;
+	border-right-color: #6BA7E3;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,6 +23,14 @@ h1, h2, h3, h4, h5, h6 {
 body {
 	background: url('/assets/satinweave/satinweave.png');
 	font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #6BA7E3;
+	font-family: "Lucida Bright", Lucidabright, serif;
+	font-weight: 600;
+	letter-spacing: -0.3px;
+	font-size: 26px;
 }
 
 .navbar.navbar-inverse {
