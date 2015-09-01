@@ -1,5 +1,6 @@
 class PlacesController < ApplicationController 
 	def index
-		@places = Place.all
+		number_of_places_per_page = 4
+		@places = Place.order(:country).page(params[:page]).per(number_of_places_per_page)
 	end
 end
