@@ -10,13 +10,26 @@ gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
+##### DESIGN #####
 # Use Bootstrap 3
 gem 'bootstrap-sass', '~> 3.3.0'
 
+# Use Simple Form
+gem 'simple_form'
+gem 'country_select'
 # Use Kaminari for pagination
+
 gem 'kaminari'
 gem 'bootstrap-kaminari-views'
 gem 'kaminari-bootstrap', '~> 3.0.1'
+
+##### TESTING #####
+# Use Rspec for testing suite
+group :development, :test do 
+	gem 'rspec-rails', '~> 3.0'	
+end
+# Use Factory Girl for factories
+gem 'factory_girl_rails', '~> 4.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -40,15 +53,6 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
-# Use Rspec for testing suite
-group :development, :test do 
-	gem 'rspec-rails', '~> 3.0'	
-end
-
-# Use Simple Form
-gem 'simple_form'
-gem 'country_select'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
